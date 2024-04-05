@@ -143,7 +143,7 @@ def draw_num(screen, mat):
                 x = margin_size * (j + 1) + block_size * j 
                 y = margin_size * (i + 1) + block_size * i + height - width
                 font_color = pygame.Color('#776e65')
-                text = font.render(str(mat[i][j]), True, font_color)
+                text = font.render(str(int(mat[i][j])), True, font_color)
                 rect = text.get_rect()
                 rect.centerx, rect.centery = x + block_size / 2, y + block_size / 2
                 pygame.draw.rect(screen, pygame.Color(color_map.get(mat[i][j], '#776e65')), (x, y, block_size, block_size))
@@ -154,7 +154,7 @@ def draw_score(screen,score):
     font = pygame.font.Font(None, font_size)
 
     font_color = pygame.Color('#f9f6f2')
-    text = font.render('score:'+str(score), True, font_color)
+    text = font.render('score:'+str(int(score)), True, font_color)
     screen.blit(text, (25, 25))
 
 def draw_gameover(screen):
