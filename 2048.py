@@ -154,7 +154,7 @@ def draw_score(screen,score):
     font = pygame.font.Font(None, font_size)
 
     font_color = pygame.Color('#f9f6f2')
-    text = font.render('score:'+str(int(score)), True, font_color)
+    text = font.render('score:'+str(score), True, font_color)
     screen.blit(text, (25, 25))
 
 def draw_gameover(screen):
