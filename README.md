@@ -1,6 +1,8 @@
 # 2048 Game
 2048 Game Implementation in Python.
+
 **Game display**：https://www.youtube.com/watch?v=POOe-YIPGy4
+
 This Python script implements the classic 2048 game using Pygame. Players can combine tiles by moving them up, down, left, or right, with the goal to reach the 2048 tile.
 
 ## Features
